@@ -4,5 +4,5 @@ def read_file(file_name):
         lines = f.readlines()
     for line in lines:
         if line[0] != '>':
-            sequences.append(line)
+            sequences.append(line.rstrip())
     return sequences
